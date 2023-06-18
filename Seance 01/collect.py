@@ -3,17 +3,15 @@ from bs4 import BeautifulSoup
 import os
 from uuid import uuid1
 
-#Etape 1: Créer un environnement virtuel 
-#Ouvrez un terminal et tapez : python3 -m venv .env 
-#Etape 2 : Activer l'environnement
-#Toujours sur le terminal taper: .env\Scripts\activate(windows), .env\bin\activate(linux)
-#Etape 3: installer les packages 
-#Taper pip install -r requirements.txt
-#Maintenant vous pouvez executer le fichier (collect.py)
+# Dans ce programme on collecte les images sur GettyImages
 
+# L'élément à rechercher
 recherche = "sadio mané" 
 
+# L'URL de recherche, ici "{recherche} sera remplacer par la valeur de la variable recherche ici par sadio mané"
 url = f"https://www.gettyimages.fr/search/2/image?family=creative&phrase={recherche}"
+
+
 header = {
     "user-agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36"
 }
